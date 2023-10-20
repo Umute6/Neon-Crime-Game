@@ -1,0 +1,36 @@
+:: StoryTitle
+Neon Crime
+
+
+:: StoryData
+{
+  "ifid": "ECA0D66C-E934-4B8D-B30B-D45C34F1473A",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "PNJ aliés/crush",
+  "zoom": 1
+}
+
+
+:: Blanche {"position":"987.5,450","size":"100,100"}
+
+
+
+:: Cyan {"position":"737.5,450","size":"100,100"}
+
+
+
+:: Jaune {"position":"862.5,450","size":"100,100"}
+
+
+
+:: Magenta {"position":"612.5,450","size":"100,100"}
+
+
+
+:: PNJ aliés/crush {"position":"800,325","size":"100,100"}
+* [[Magenta]] (le Boss)
+* [[Cyan]], celui qui trouva le corps (le Manager du hangar)
+* [[Jaune]] (la Cheffe mécanisienne)
+* [[Blanche]] (la Barista)
+
