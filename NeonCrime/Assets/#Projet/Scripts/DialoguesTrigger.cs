@@ -5,9 +5,17 @@ using UnityEngine;
 public class DialoguesTrigger : MonoBehaviour
 {
    public Dialogues dialogues;
-   public void TriggerDialogues()
+
+   private void OnTiggerEnter2D(Collider2D other)
    {
-    //singleton
-    FindObjectOfType<DialogueManager>().StartDialogue(dialogues);
+    if (other.CompareTag("NPC"))
+    {
+
+      FindObjectOfType<DialogueManager>().StartDialogue(dialogues);
+
+    }
    }
 }
+
+
+// https://www.youtube.com/watch?v=PswC-HlKZqA

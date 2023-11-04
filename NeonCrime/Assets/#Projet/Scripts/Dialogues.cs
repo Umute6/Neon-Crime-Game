@@ -6,6 +6,6 @@ using UnityEngine;
 public class Dialogues
 {
     public string name;
-    [TextArea(3, 10)]
+    [TextArea(3, 10)] // 3 is the minimal of lines and 10 the max
     public string[] sentences;
 }

@@ -15,6 +15,25 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogues dialogues)
     {
         Debug.Log("Startin w/" + dialogues.name);
+        sentences.Clear();
+        foreach (string sentence in dialogues.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
+        DisplayNextSentence();
     }
-
+    // public void DisplayNextSentence()
+    // {
+    //     if(sentences.Count == 0)
+    //     {
+    //         EndDialogue();
+    //         return;
+    //     }
+    //     string sentence = sentences.Dequeue();
+    //     Debug.Log(sentence);
+    // }
+    // void EndDialogue()
+    // {
+    //     Debug.Log("End of conversation");
+    // }
 }
