@@ -1,39 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-
-    private Queue<string> sentences;
-
+    public Image actorImage;
+    public TextMesh actorName;
+    public TextMesh messageText;
+    public RectTransform backgroundBox;
+    // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+        
     }
-    //add method
-    public void StartDialogue(Dialogues dialogues)
+
+    // Update is called once per frame
+    void Update()
     {
-        Debug.Log("Startin w/" + dialogues.name);
-        sentences.Clear();
-        foreach (string sentence in dialogues.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-        DisplayNextSentence();
+        
     }
-    // public void DisplayNextSentence()
-    // {
-    //     if(sentences.Count == 0)
-    //     {
-    //         EndDialogue();
-    //         return;
-    //     }
-    //     string sentence = sentences.Dequeue();
-    //     Debug.Log(sentence);
-    // }
-    // void EndDialogue()
-    // {
-    //     Debug.Log("End of conversation");
-    // }
 }
