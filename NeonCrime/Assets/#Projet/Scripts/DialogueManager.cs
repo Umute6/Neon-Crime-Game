@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-
-    private Queue<string> sentences;
-
+    public Image actorImage;
+    public TextMesh actorName;
+    public TextMesh messageText;
+    public RectTransform backgroundBox;
+    // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
-    }
-    //add method
-    public void StartDialogue(Dialogues dialogues)
-    {
-        Debug.Log("Startin w/" + dialogues.name);
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
