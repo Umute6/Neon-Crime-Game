@@ -6,6 +6,13 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
     public Actor[] actors;
+
+    //method will start convers
+    public void StartDialogue()
+    {
+        FindAnyObjectByType<DialogueManager>().OpenDialogue(messages, actors);
+        // SINGLETON (??!)
+    }
 }
 
 [System.Serializable]
