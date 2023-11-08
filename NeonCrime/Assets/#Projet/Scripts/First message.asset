@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e7e5302fd84df4089c11c1cd0e7537, type: 3}
-  m_Name: DMCyan
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: First message
   m_EditorClassIdentifier: 
-  npcName: 
-  currentMessage: 
+  message: Hello
+  next:
+  - {fileID: 11400000, guid: d553f16bc13ea6342afd1b5cc66ff0fc, type: 2}
