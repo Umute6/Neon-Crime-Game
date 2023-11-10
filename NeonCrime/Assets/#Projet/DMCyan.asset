@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e7e5302fd84df4089c11c1cd0e7537, type: 3}
   m_Name: DMCyan
   m_EditorClassIdentifier: 
-  npcName: 
-  currentMessage: 
+  npcName: 'Cyan '
+  currentMessage:
+  - "Je te souhaite la bienvenue! Mon nom est Cyan, je suis le manager d'une petite
+    \xE9quipe. Tu es ici dans notre lieu de travail, les sous terrains de m\xE9tro. "

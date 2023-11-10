@@ -482,7 +482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244225014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d74998f629bd6224aa7aea8ec62fcca7, type: 3}
   m_Name: 
@@ -491,6 +491,9 @@ MonoBehaviour:
   actorName: {fileID: 31905658}
   messageText: {fileID: 84636547}
   backgroundBox: {fileID: 0}
+  currentMessages: []
+  currentActors: []
+  activeMessage: 0
 --- !u!1 &483515689
 GameObject:
   m_ObjectHideFlags: 0
