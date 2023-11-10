@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 244225015}
   - component: {fileID: 244225017}
   - component: {fileID: 244225016}
-  - component: {fileID: 244225018}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
@@ -338,22 +337,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244225014}
   m_CullTransparentMesh: 1
---- !u!114 &244225018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244225014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74998f629bd6224aa7aea8ec62fcca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorImage: {fileID: 627126736}
-  actorName: {fileID: 0}
-  messageText: {fileID: 0}
-  backgroundBox: {fileID: 244225015}
 --- !u!1 &408341636
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +348,6 @@ GameObject:
   - component: {fileID: 408341638}
   - component: {fileID: 408341637}
   - component: {fileID: 408341640}
-  - component: {fileID: 408341639}
   m_Layer: 0
   m_Name: NPC - Cyan
   m_TagString: Untagged
@@ -440,20 +422,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &408341639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408341636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 453ace5109b05ac478aa43693bf12668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages: []
-  actors: []
 --- !u!61 &408341640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -488,8 +456,8 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 6.5, y: 0, z: 2.32, w: 2.0499997}
+    pivot: {x: 0.22815424, y: 0.9338352}
     oldSize: {x: 30.239998, y: 30.239998}
     newSize: {x: 30.239998, y: 30.239998}
     adaptiveTilingThreshold: 0.5
@@ -722,6 +690,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &528910587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 528910589}
+  - component: {fileID: 528910588}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &528910588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528910587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c263d344c5f8b644a3238336d8d2929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMessage: {fileID: 11400000, guid: 8df3fabe47bfcad498431308c262d674, type: 2}
+--- !u!4 &528910589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528910587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 640.8481, y: 270, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1203,7 +1216,6 @@ GameObject:
   - component: {fileID: 1987537620}
   - component: {fileID: 1987537619}
   - component: {fileID: 1987537618}
-  - component: {fileID: 1987537617}
   m_Layer: 5
   m_Name: start convers
   m_TagString: Untagged
@@ -1231,27 +1243,6 @@ RectTransform:
   m_AnchoredPosition: {x: 18.0913, y: 40.4395}
   m_SizeDelta: {x: 196.1827, y: 110.8789}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1987537617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987537615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 453ace5109b05ac478aa43693bf12668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorId: 0
-    message: Merci pour ta venue!
-  - actorId: 0
-    message: "J'aimerai ton aide pour d\xE9masquer la personne qui d\xE9tient le
-      prisme"
-  actors:
-  - name: Cyan
-    sprite: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
 --- !u!114 &1987537618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,3 +1334,4 @@ SceneRoots:
   - {fileID: 894685945}
   - {fileID: 1367900059}
   - {fileID: 408341638}
+  - {fileID: 528910589}
