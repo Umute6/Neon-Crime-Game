@@ -4,15 +4,18 @@ using UnityEngine;
 
 
 [CreateAssetMenu]
-public class DebugLogMessage : ScriptableObject 
+public class DialogueMessage : ScriptableObject 
 
 { /// <summary>
 /// class C# normale
 /// </summary>
     public string message;
-    public DebugLogMessage[] next;
 
-    public DebugLogMessage GetNextMessage() // renvoie un type DebugLogMessage
+    public string[] answers;
+    public DialogueMessage[] next;
+    
+
+    public DialogueMessage GetNextMessage() // renvoie un type DebugLogMessage
     {
         if (next != null && next.Length > 0)
         {
