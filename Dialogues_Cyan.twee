@@ -1,0 +1,30 @@
+:: StoryTitle
+Dialogues_Cyan
+
+
+:: StoryData
+{
+  "ifid": "66701591-67C9-4C70-9111-99D798D20947",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Passage sans titre",
+  "zoom": 1
+}
+
+
+:: Accueil par Cyan {"position":"800,450","size":"100,100"}
+Je te souhaite la bienvenue. 
+Je présume que tu as reçu les informations sur la situation. 
+Mon nom est Cyan, je suis le manager de l'équipe qui a conçu cette source d'énergie révolutionnaire, malheureusement, celle-ci a été dérobée. Nous avons besoin de compétences spécifiques pour résoudre cette affaire, et nous comptons sur ton expertise. N'hésitez pas à me faire part de vos questions et préoccupations. Nous sommes ici pour collaborer efficacement et rétablir l'ordre dans cette affaire délicate."
+
+
+
+
+
+
+
+:: Passage sans titre {"position":"800,325","size":"100,100"}
+"Urgence : le projet //Neonlume// a été compromis ! Ce soir devait marquer le lancement d'une nouvelle source d'énergie pour l'activité nocturne, la //SpectraPulse//, conçue depuis des mois. La personne responsable semble être en interne et est probablement encore sur les lieux. Les employés du Synchronova se sont enfermés pour la coincer. Avec ta renommée, l'identification de la coupable repose sur toi."
+
+[[Accueil par Cyan]]
+
