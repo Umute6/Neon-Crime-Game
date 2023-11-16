@@ -9,6 +9,9 @@ public class DialogueMessage : ScriptableObject
 { /// <summary>
 /// class C# normale
 /// </summary>
+/// 
+    public string nameNPC;
+    [TextArea(3, 10)]
     public string message;
 
     public string[] answers;

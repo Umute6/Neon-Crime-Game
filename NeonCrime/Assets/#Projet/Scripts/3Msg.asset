@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
   m_Name: 3Msg
   m_EditorClassIdentifier: 
-  message: Bye!
+  nameNPC: Cyan
+  message: You can go see who you want...
   answers: []
   next:
   - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}

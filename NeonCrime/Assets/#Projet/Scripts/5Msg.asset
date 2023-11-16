@@ -10,13 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
-  m_Name: 4Msg
+  m_Name: 5Msg
   m_EditorClassIdentifier: 
-  nameNPC: Magenta
-  message: Bye!<br>And don't lost yourself
-  answers:
-  - Let's meet the suspects!
-  - Let's meet the suspects!
-  - Let's meet the suspects!
-  next:
-  - {fileID: 0}
+  nameNPC: 
+  message: 
+  answers: []
+  next: []

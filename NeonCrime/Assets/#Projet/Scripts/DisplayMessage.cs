@@ -32,10 +32,12 @@ public class DisplayMessage : MonoBehaviour
         void Update()
         {
             //appuyez sur n'importe quelle touche pour afficher le next msg
-            if (Input.anyKeyDown)
+            if (Input.GetKeyDown("space"))
             {
                 dialogueManager.DisplayNextMessage();
 
             }
+
+            //if(answerIndex.OnClick)
         }
     }
