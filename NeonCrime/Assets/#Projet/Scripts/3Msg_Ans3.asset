@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 3Msg_Ans3
+  m_EditorClassIdentifier: 
+  nameNPC: Cyan
+  message: "Du fait de ma position, j'ai pu recueillir des avis divergents depuis
+    le d\xE9but du projet. C'est donc avec un profond regret que mon sup\xE9rieur
+    et moi avons identifi\xE9 les principaux suspects : trois employ\xE9s manifestant
+    des opinions n\xE9gatives assorties d'attitudes douteuses (soupire).\r\n"
+  answers: []
+  next:
+  - {fileID: 11400000, guid: 20497bc3895f86a40b2963521a670264, type: 2}

@@ -15,14 +15,20 @@ public class DialogueMessage : ScriptableObject
     public string message;
 
     public string[] answers;
+    private int selectedAnswerIndex = -1;
     public DialogueMessage[] next;
+
+    public void SetSelectedAnswerIndex (int index)
+    {
+        selectedAnswerIndex = index;
+    }
     
 
-    public DialogueMessage GetNextMessage() // renvoie un type DebugLogMessage
+    public DialogueMessage GetNextMessage( ) // renvoie un type DebugLogMessage
     {
-        if (next != null && next.Length > 0)
+        if (next != null && selectedAnswerIndex >= 0 && selectedAnswerIndex < next.Length)
         {
-            return next[0]; // choisit le 1er
+            return next[selectedAnswerIndex]; // choisit le 1er
         }
         else
         {

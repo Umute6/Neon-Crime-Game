@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
   m_Name: 4Msg
   m_EditorClassIdentifier: 
-  nameNPC: Magenta
-  message: Bye!<br>And don't lost yourself
-  answers:
-  - Let's meet the suspects!
-  - Let's meet the suspects!
-  - Let's meet the suspects!
-  next:
-  - {fileID: 0}
+  nameNPC: Cyan
+  message: "Le projet \xE9tait connu exclusivement au sein de mon \xE9quipe, couverte
+    par le secret professionnel. Ce soir devait marquer son lancement, et actuellement,
+    seule mon \xE9quipe se devait \xEAtre pr\xE9sente. Ainsi, le <i>Prismapulse</i>
+    ne peut avoir \xE9t\xE9 d\xE9rob\xE9 que par l'une des personnes se trouvant
+    sur les lieux."
+  answers: []
+  next: []

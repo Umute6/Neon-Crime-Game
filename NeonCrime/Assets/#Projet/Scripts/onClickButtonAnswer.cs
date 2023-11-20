@@ -9,28 +9,28 @@ public class onClickButtonAnswer : MonoBehaviour
     //public DialogueManager dialogueManager;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        buttonAnswer1.onClick.AddListener(TaskOnClick);
-        buttonAnswer2.onClick.AddListener(delegate {TaskWithParameters("Hello");});
-        buttonAnswer3.onClick.AddListener(()=> ButtonClicked(16));
-        buttonAnswer3.onClick.AddListener(TaskOnClick);
-    }
+    // void Start()
+    // {
+    //     buttonAnswer1.onClick.AddListener(TaskOnClick);
+    //     buttonAnswer2.onClick.AddListener(delegate {TaskWithParameters("Hello");});
+    //     buttonAnswer3.onClick.AddListener(()=> ButtonClicked(16));
+    //     buttonAnswer3.onClick.AddListener(TaskOnClick);
+    // }
 
-    void TaskOnClick()
-    {
-        Debug.Log("You have clicked the button!");
-    }
+    // void TaskOnClick()
+    // {
+    //     Debug.Log("You have clicked the button!");
+    // }
 
-    void TaskWithParameters(string message)
-    {
-        Debug.Log(message);
-    }
+    // void TaskWithParameters(string message)
+    // {
+    //     Debug.Log(message);
+    // }
 
-    void ButtonClicked(int buttonNo)
-    {
-        Debug.Log("Button clicked = " + buttonNo);
-    }
+    // void ButtonClicked(int buttonNo)
+    // {
+    //     Debug.Log("Button clicked = " + buttonNo);
+    // }
 
     
 

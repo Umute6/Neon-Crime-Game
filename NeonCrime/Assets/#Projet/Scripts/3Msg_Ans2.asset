@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
-  m_Name: 1Msg
+  m_Name: 3Msg_Ans2
   m_EditorClassIdentifier: 
-  nameNPC: ???
-  message: "Je te souhaite la bienvenue. \r\nJe pr\xE9sume que tu as re\xE7u les
-    informations sur la situation. "
+  nameNPC: Cyan
+  message: "H\xE2te d'assister aux r\xE9sultats (rit)."
   answers: []
-  next:
-  - {fileID: 11400000, guid: 3b0ea6a45d910514d9ed95921bd0b6e2, type: 2}
+  next: []

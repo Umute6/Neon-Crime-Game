@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: 3Msg
   m_EditorClassIdentifier: 
   nameNPC: Cyan
-  message: You can go see who you want...
-  answers: []
+  message: "Nous avons besoin de tes capacit\xE9s pour r\xE9soudre cette affaire.
+    Et, il en va sans dire que c'est une situation d\xE9licate. "
+  answers:
+  - "Je sais faire preuve de tacte. [Enqu\xEAte - faible]"
+  - "Mon charme saura faire parler les suspects. [Enqu\xEAte - difficile]"
+  - "En quoi est-ce une situation d\xE9licate, je vous prie de m'expliquer. [Neutre]"
   next:
+  - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}
+  - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}
   - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}

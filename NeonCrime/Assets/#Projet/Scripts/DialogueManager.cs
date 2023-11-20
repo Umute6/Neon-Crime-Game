@@ -11,7 +11,9 @@ public class DialogueManager : MonoBehaviour
 
     public TMP_Text dialogueTextMP; // var du text, ATTENTION TMP_Text new type for text!!
     public TMP_Text[] answersText;
+    public GameObject[] answerButtons; // setActive
     public TMP_Text nameNPCText;
+   // public Sprite spriteNPC;
     public GameObject dialogueBox; //tmtc, la box du dial mais peut-être changer l'encrage
 
     private Queue<DialogueMessage> dialogueQueue = new Queue<DialogueMessage>(); // FIFO, method for dialogues and lines
@@ -35,6 +37,7 @@ public class DialogueManager : MonoBehaviour
 
         //affiche le 1er msg
         DisplayNextMessage();
+        //DisplaySpriteNPC();
     }
 
     //method pour afficher le prochain msg dans la file d'attente
@@ -51,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         dialogueTextMP.text = currentMessage.message;
         dialogueBox.SetActive(true);
 
-        if (dialogueQueue.Count == 0)
+        if (currentMessage.next.Length > 1)
         {
             DisplayAnswers();
         }
@@ -79,8 +82,16 @@ public class DialogueManager : MonoBehaviour
         {
             nameNPCText.text = "no NPC available";
         }
+
     }
 
+    // private void DisplaySpriteNPC()
+    // {
+    //     if(currentMessage != null)
+    //     {
+    //         if (spriteNPC != null)
+    //     }
+    // }
 
     private void DisplayAnswers()
     {
@@ -90,7 +101,7 @@ public class DialogueManager : MonoBehaviour
             for (int i = 0; i < answersText.Length && i < currentMessage.answers.Length; i++)
             {
                 answersText[i].text = currentMessage.answers[i];
-                answersText[i].gameObject.SetActive(true);
+                answerButtons[i].SetActive(true);
             }
 
         }
@@ -105,9 +116,9 @@ public class DialogueManager : MonoBehaviour
 
     private void HideAnswers()
     {
-        foreach (var answerText in answersText)
+        foreach (var answerButton in answerButtons)
         {
-            answerText.gameObject.SetActive(false);
+            answerButton.SetActive(false);
         }
     }
 
@@ -116,8 +127,11 @@ public class DialogueManager : MonoBehaviour
         if (currentMessage != null && currentMessage.next != null && answerIndex < currentMessage.next.Length)
         {
             //récupère le prochain msg en fonction de la réponse choisie
+            currentMessage.SetSelectedAnswerIndex(answerIndex);
             DialogueMessage nextMessage = currentMessage.next[answerIndex];
             StartDialogue(nextMessage);
         }
     }
+
+  
 }
