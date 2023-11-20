@@ -21,5 +21,5 @@ MonoBehaviour:
   - "En quoi est-ce une situation d\xE9licate, je vous prie de m'expliquer. [Neutre]"
   next:
   - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}
-  - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}
-  - {fileID: 11400000, guid: 81afbd8a9cf632e439fd88c82699aa06, type: 2}
+  - {fileID: 11400000, guid: 46b6e11bc88a2e44b9ac9491069ca453, type: 2}
+  - {fileID: 11400000, guid: 2c4bfd9d1e939ba48937af41e07e4caf, type: 2}

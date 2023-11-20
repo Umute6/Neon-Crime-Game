@@ -6,32 +6,19 @@ using UnityEngine.UI;
 public class onClickButtonAnswer : MonoBehaviour
 {
     public Button buttonAnswer1, buttonAnswer2, buttonAnswer3;
-    //public DialogueManager dialogueManager;
+    public DialogueManager dialogueManager;
 
-    // Start is called before the first frame update
-    // void Start()
-    // {
-    //     buttonAnswer1.onClick.AddListener(TaskOnClick);
-    //     buttonAnswer2.onClick.AddListener(delegate {TaskWithParameters("Hello");});
-    //     buttonAnswer3.onClick.AddListener(()=> ButtonClicked(16));
-    //     buttonAnswer3.onClick.AddListener(TaskOnClick);
-    // }
+    //Start is called before the first frame update
+    void Start()
+    {
+        buttonAnswer1.onClick.AddListener(()=>TaskOnClick(0));
+        buttonAnswer2.onClick.AddListener(()=> TaskOnClick(1));
+        buttonAnswer3.onClick.AddListener(()=> TaskOnClick(2));
+    }
 
-    // void TaskOnClick()
-    // {
-    //     Debug.Log("You have clicked the button!");
-    // }
-
-    // void TaskWithParameters(string message)
-    // {
-    //     Debug.Log(message);
-    // }
-
-    // void ButtonClicked(int buttonNo)
-    // {
-    //     Debug.Log("Button clicked = " + buttonNo);
-    // }
-
-    
+    void TaskOnClick(int answerIndex)
+    {
+        dialogueManager.PlayerSelectedAnswer(answerIndex);
+    } 
 
 }

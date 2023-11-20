@@ -12,7 +12,7 @@ public class DisplayMessage : MonoBehaviour
     {
         if (dialogueManager == null)
         {
-            // si le DialogueMannder n'est pas attribué, recherche-le dans la scène
+            // si le DialogueManager n'est pas attribué, recherche-le dans la scène
             dialogueManager = FindObjectOfType<DialogueManager>();
             if (dialogueManager == null)
             {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu]
-public class DialogueMessage : ScriptableObject 
+public class DialogueMessage : ScriptableObject
 
 { /// <summary>
 /// class C# normale
@@ -18,17 +18,17 @@ public class DialogueMessage : ScriptableObject
     private int selectedAnswerIndex = -1;
     public DialogueMessage[] next;
 
-    public void SetSelectedAnswerIndex (int index)
+    public void SetSelectedAnswerIndex(int index)
     {
         selectedAnswerIndex = index;
     }
-    
 
-    public DialogueMessage GetNextMessage( ) // renvoie un type DebugLogMessage
+
+    public DialogueMessage GetNextMessage() // renvoie un type DebugLogMessage
     {
-        if (next != null && selectedAnswerIndex >= 0 && selectedAnswerIndex < next.Length)
+        if (next != null && next.Length == 1)
         {
-            return next[selectedAnswerIndex]; // choisit le 1er
+            return next[0]; // choisit le 1er
         }
         else
         {
@@ -36,4 +36,30 @@ public class DialogueMessage : ScriptableObject
         }
 
     }
+}
+
+
+
+[CreateAssetMenu]
+public class DiceRollDialogueMessage : DialogueMessage
+{
+    public int difficulty;
+
+    public new DialogueMessage GetNextMessage() //new remplace le précédent GNM pour le jet Dice
+    {
+        int rollDice = Random.Range(1, 11);
+        if (rollDice <= 5)
+        {
+            message = "Réussi";
+        }
+        else
+        {
+            message = "Raté";
+        }
+        //à retourner une instance de DialogueMessage
+        return base.GetNextMessage();
+
+    }
+
+
 }
