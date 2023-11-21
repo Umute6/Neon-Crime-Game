@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CyanExplainsWhoareHisCollgues
   m_EditorClassIdentifier: 
   nameNPC: Cyan
+  spriteNPC: {fileID: 0}
   message: "J'ai inform\xE9 mes coll\xE8gues que l'on suspecte de se mettre \xE0
     ta dispositon. Mais sache que l'ing\xE9nieure qui est \xE0 l'origine du projet
     souhaitait aussi te parler \xE0 ton arriv\xE9e. "

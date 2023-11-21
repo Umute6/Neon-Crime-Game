@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text[] answersText;
     public GameObject[] answerButtons; // setActive
     public TMP_Text nameNPCText;
+    private string previousNPCName;
     public Image profileNPCImage;
     public GameObject dialogueBox; //tmtc, la box du dial mais peut-être changer l'encrage
 
@@ -37,7 +38,6 @@ public class DialogueManager : MonoBehaviour
 
         //affiche le 1er msg
         DisplayNextMessage();
-        //DisplaySpriteNPC();
     }
 
     //method pour afficher le prochain msg dans la file d'attente
@@ -62,10 +62,10 @@ public class DialogueManager : MonoBehaviour
         {
             HideAnswers();
         }
-        DisplayNameNPC();
+        DisplayNPC();
     }
 
-    private void DisplayNameNPC()
+    private void DisplayNPC()
     {
         if (currentMessage != null)
         {
@@ -82,6 +82,21 @@ public class DialogueManager : MonoBehaviour
         {
             nameNPCText.text = "no NPC available";
         }
+
+        Color color = profileNPCImage.color; 
+        if(currentMessage.spriteNPC != null){
+            profileNPCImage.sprite = currentMessage.spriteNPC;
+            color.a = 1f;
+        }
+        else{
+            if(previousNPCName  != currentMessage.nameNPC){
+                profileNPCImage.sprite = null;
+                color.a = 0f;
+            }
+        }
+        profileNPCImage.color = color;
+
+        previousNPCName = currentMessage.nameNPC;
 
     }
 

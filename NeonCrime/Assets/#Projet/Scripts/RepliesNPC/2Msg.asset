@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 2Msg
   m_EditorClassIdentifier: 
   nameNPC: Cyan
+  spriteNPC: {fileID: 0}
   message: "Mon nom est Cyan. Je suis le manager de l'\xE9quipe qui a con\xE7u cette
     source d'\xE9nergie qui a \xE9t\xE9 d\xE9rob\xE9e. \r"
   answers: []
+  selectedAnswerIndex: -1
   next:
   - {fileID: 11400000, guid: 7ec48e4a8f825714da05775b63671f8b, type: 2}

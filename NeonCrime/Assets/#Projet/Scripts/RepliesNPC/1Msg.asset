@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 1Msg
   m_EditorClassIdentifier: 
   nameNPC: ???
+  spriteNPC: {fileID: 0}
   message: "Je te souhaite la bienvenue. \r\nJe pr\xE9sume que tu as re\xE7u les
     informations sur la situation. "
   answers: []
+  selectedAnswerIndex: -1
   next:
   - {fileID: 11400000, guid: 3b0ea6a45d910514d9ed95921bd0b6e2, type: 2}
