@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 
@@ -11,12 +12,13 @@ public class DialogueMessage : ScriptableObject
 /// </summary>
 /// 
     public string nameNPC;
+    public Image profileNPC;
     [TextArea(3, 10)]
     public string message;
 
     public string[] answers;
-    private int selectedAnswerIndex = -1;
-    public DialogueMessage[] next;
+    public int selectedAnswerIndex = -1;
+    public DialogueMessage[] next; //peut-être changer le nom
 
     public void SetSelectedAnswerIndex(int index)
     {
@@ -53,17 +55,18 @@ public class DialogueMessage : ScriptableObject
 public class DiceRollDialogueMessage : DialogueMessage
 {
 
-    public DialogueMessage[] nextFailed;
-    public int difficulty;
+    public DialogueMessage[] nextFailed; // parce 50% de rater
+    public int difficulty; //prévu pour la voie choisie
     
 
-    private DialogueMessage SelectAnswer(int answer){
-        Debug.Log("GetNextMessage called!");
+    private DialogueMessage SelectAnswer(int answer){ //Sélectionne la réponse en fonction du lancer de dé
+        //Debug.Log("GetNextMessage called!");
         int rollDice = Random.Range(1, 11);
-        Debug.Log(rollDice);
-        int threshold = 6 - difficulty;
+        Debug.Log(rollDice); //////////// montre le random - à voir pour l'afficher au screen in game
+        int threshold = 5 - difficulty;
 
-        DialogueMessage answerMessage = nextFailed[answer];
+            //Sélectionne le message de réponse en fonction du résultat du lancé de dé
+        DialogueMessage answerMessage = nextFailed[answer]; //par défaut en cas d'échec
         if (rollDice <= threshold){
             answerMessage = next[answer];
         }
@@ -71,21 +74,26 @@ public class DiceRollDialogueMessage : DialogueMessage
         return answerMessage;
     }
 
+
+        //Override de la method GetNextMessage sans argument (pour compatibilité)
     public override DialogueMessage GetNextMessage(){
+        //applle la version avec argument en passant 0 comme réponse par défaut
         return GetNextMessage(0);
     }
 
+        //Override de la method GeNextMessage avec argument (réponse choisie par le player)
     public override DialogueMessage GetNextMessage(int answer = 0) //new remplace le précédent GNM pour le jet Dice
     {
 
         if (next != null && next.Length > 0)
         {
+            //utilise la function SelectAnswer pour obtenir le message de réponse
             return SelectAnswer(answer);
             //message = "Réussi";
         }
         else
         {
-            return null;
+            return null; // Retourne null si le tableau des msgs suivants est vide
         }
         //à retourner une instance de DialogueMessage
 

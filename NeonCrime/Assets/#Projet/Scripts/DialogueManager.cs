@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text[] answersText;
     public GameObject[] answerButtons; // setActive
     public TMP_Text nameNPCText;
-   // public Sprite spriteNPC;
+    public Image profileNPCImage;
     public GameObject dialogueBox; //tmtc, la box du dial mais peut-être changer l'encrage
 
     private Queue<DialogueMessage> dialogueQueue = new Queue<DialogueMessage>(); // FIFO, method for dialogues and lines
@@ -85,13 +85,6 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    // private void DisplaySpriteNPC()
-    // {
-    //     if(currentMessage != null)
-    //     {
-    //         if (spriteNPC != null)
-    //     }
-    // }
 
     private void DisplayAnswers()
     {

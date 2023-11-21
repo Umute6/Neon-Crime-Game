@@ -18,5 +18,6 @@ MonoBehaviour:
     et moi avons identifi\xE9 les principaux suspects : trois employ\xE9s manifestant
     des opinions n\xE9gatives assorties d'attitudes douteuses (soupire).\r\n"
   answers: []
+  selectedAnswerIndex: -1
   next:
-  - {fileID: 11400000, guid: 20497bc3895f86a40b2963521a670264, type: 2}
+  - {fileID: 11400000, guid: baff47ff80658d046a95f039903d99c1, type: 2}

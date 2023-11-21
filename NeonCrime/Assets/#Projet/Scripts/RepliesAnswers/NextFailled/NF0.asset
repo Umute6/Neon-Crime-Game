@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
-  m_Name: 4Msg
+  m_Name: NF0
   m_EditorClassIdentifier: 
   nameNPC: Cyan
-  message: "Le projet \xE9tait connu exclusivement au sein de mon \xE9quipe, couverte
-    par le secret professionnel. Ce soir devait marquer son lancement, et actuellement,
-    seule mon \xE9quipe se devait \xEAtre pr\xE9sente. Ainsi, le <i>Prismapulse</i>
-    ne peut avoir \xE9t\xE9 d\xE9rob\xE9 que par l'une des personnes se trouvant
-    sur les lieux."
+  message: "J'esp\xE8re bien!"
   answers: []
-  next: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: baff47ff80658d046a95f039903d99c1, type: 2}
