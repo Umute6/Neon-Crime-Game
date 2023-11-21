@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
-  m_Name: 3Msg_Ans2
+  m_Name: DiceMsg_Ans2
   m_EditorClassIdentifier: 
   nameNPC: Cyan
   message: "H\xE2te d'assister aux r\xE9sultats (rit)."

@@ -128,7 +128,7 @@ public class DialogueManager : MonoBehaviour
         {
             //récupère le prochain msg en fonction de la réponse choisie
             currentMessage.SetSelectedAnswerIndex(answerIndex);
-            DialogueMessage nextMessage = currentMessage.next[answerIndex];
+            DialogueMessage nextMessage = currentMessage.GetNextMessage(answerIndex);
             StartDialogue(nextMessage);
         }
     }
