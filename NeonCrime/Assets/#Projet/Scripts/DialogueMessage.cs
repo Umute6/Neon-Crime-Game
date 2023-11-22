@@ -63,6 +63,7 @@ public class DialogueMessage : ScriptableObject
 [CreateAssetMenu]
 public class DiceRollDialogueMessage : DialogueMessage
 {
+    public ProfilePlayer selectedClass;
 
     public DialogueMessage[] nextFailed; // parce 50% de rater
     public int difficulty; //prévu pour la voie choisie
