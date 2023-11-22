@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19fd2a0c663cae4aba205ef33f671f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  type: 0
 --- !u!4 &1928677278
 Transform:
   m_ObjectHideFlags: 0
