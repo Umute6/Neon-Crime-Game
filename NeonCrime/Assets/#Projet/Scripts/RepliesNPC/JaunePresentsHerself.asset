@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: JaunePresentsHerself
   m_EditorClassIdentifier: 
   nameNPC: ???
+  spriteNPC: {fileID: 21300000, guid: a0115cb3998893c4882cd66fe045a185, type: 3}
   message: "BONJOUR !! Ou bonsoir... Ou bon \"peu importe\" quelle heure il est de
     la journ\xE9e!!"
   answers: []

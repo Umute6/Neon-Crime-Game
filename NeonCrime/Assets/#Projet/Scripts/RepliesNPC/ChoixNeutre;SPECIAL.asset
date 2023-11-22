@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChoixNeutre;SPECIAL
   m_EditorClassIdentifier: 
   nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: "Merci de me faire confiance! Allons voir l'ing\xE9nieure. Je t'avoue
     que je m'inqui\xE8te un peu pour elle..."
   answers: []
