@@ -9,6 +9,7 @@ using Unity.VisualScripting;
 public class DialogueManager : MonoBehaviour
 {
 
+    public ChangeColorNPC changeColorNPC;
     public TMP_Text dialogueTextMP; // var du text, ATTENTION TMP_Text new type for text!!
     public TMP_Text[] answersText;
     public GameObject[] answerButtons; // setActive
@@ -72,6 +73,17 @@ public class DialogueManager : MonoBehaviour
             if (!string.IsNullOrEmpty(currentMessage.nameNPC))
             {
                 nameNPCText.text = currentMessage.nameNPC;
+                if (changeColorNPC != null)
+                {
+                    if (currentMessage.nameNPC == "Cyan")
+                    {
+                        changeColorNPC.ChangeColorToCyan();
+                    }
+                    else if (currentMessage.nameNPC == "Jaune")
+                    {
+                        changeColorNPC.ChangeColorToJaune();
+                    }
+                }
             }
             else
             {
@@ -83,13 +95,16 @@ public class DialogueManager : MonoBehaviour
             nameNPCText.text = "no NPC available";
         }
 
-        Color color = profileNPCImage.color; 
-        if(currentMessage.spriteNPC != null){
+        Color color = profileNPCImage.color;
+        if (currentMessage.spriteNPC != null)
+        {
             profileNPCImage.sprite = currentMessage.spriteNPC;
             color.a = 1f;
         }
-        else{
-            if(previousNPCName  != currentMessage.nameNPC){
+        else
+        {
+            if (previousNPCName != currentMessage.nameNPC)
+            {
                 profileNPCImage.sprite = null;
                 color.a = 0f;
             }
@@ -141,5 +156,5 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-  
+
 }

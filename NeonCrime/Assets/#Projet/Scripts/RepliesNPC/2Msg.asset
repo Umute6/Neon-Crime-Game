@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
   m_Name: 2Msg
   m_EditorClassIdentifier: 
-  nameNPC: Cyan
+  nameNPC: Jaune
   spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: "Mon nom est Cyan. Je suis le manager de l'\xE9quipe qui a con\xE7u cette
     source d'\xE9nergie qui a \xE9t\xE9 d\xE9rob\xE9e. \r"
