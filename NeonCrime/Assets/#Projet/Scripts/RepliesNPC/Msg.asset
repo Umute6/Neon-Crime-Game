@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
-  m_Name: SUS!
+  m_Name: Msg
   m_EditorClassIdentifier: 
   nameNPC: Text
-  spriteNPC: {fileID: 21300000, guid: 6b544c32f2f7cc4448db17d84298ddbe, type: 3}
-  message: "*Tout le monde parle en m\xEAme temps. Personne ne fait attention \xE0
-    votre arriv\xE9e.*"
+  spriteNPC: {fileID: 0}
+  message: "Devant le Synthchronova Caf\xE9, message \xE0 nouveau lu : le <b>Prismapulse</b>
+    a disparu. "
   answers: []
   selectedAnswerIndex: -1
-  next: []
+  next:
+  - {fileID: 11400000, guid: c0ef508023f012242aede9cfca8f74cc, type: 2}

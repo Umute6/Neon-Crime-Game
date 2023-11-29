@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NF1
   m_EditorClassIdentifier: 
   nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: "Je ne me prononcerai pas pour mes coll\xE8gues."
   answers: []
   selectedAnswerIndex: -1

@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
                                             // private DialogueMessage currentNPC;
                                             // public onClickButtonAnswer buttonAnswerHandler; //ajoute une réf au gestionnaire de boutons
 
-
+    private ProfilePlayer profilePlayer;
     //method pour afficher nouveau msg
     public void StartDialogue(DialogueMessage message)
     {
@@ -36,7 +36,6 @@ public class DialogueManager : MonoBehaviour
             dialogueQueue.Enqueue(currentMessage); // '.' opérateur de traversée
             currentMessage = currentMessage.GetNextMessage(); // GetNextMessage() se trouve dans le ScriptableObject
         }
-
         //affiche le 1er msg
         DisplayNextMessage();
     }
@@ -75,14 +74,7 @@ public class DialogueManager : MonoBehaviour
                 nameNPCText.text = currentMessage.nameNPC;
                 if (changeColorNPC != null)
                 {
-                    if (currentMessage.nameNPC == "Cyan")
-                    {
-                        changeColorNPC.ChangeColorToCyan();
-                    }
-                    else if (currentMessage.nameNPC == "Jaune")
-                    {
-                        changeColorNPC.ChangeColorToJaune();
-                    }
+                    changeColorNPC.ChangeColor(currentMessage.nameNPC);
                 }
             }
             else
@@ -149,6 +141,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentMessage != null && currentMessage.next != null && answerIndex < currentMessage.next.Length)
         {
+            //int diceResult = profilePlayer.RollDice();
             //récupère le prochain msg en fonction de la réponse choisie
             currentMessage.SetSelectedAnswerIndex(answerIndex);
             DialogueMessage nextMessage = currentMessage.GetNextMessage(answerIndex);

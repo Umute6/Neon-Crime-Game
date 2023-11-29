@@ -6,16 +6,11 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class DialogueMessage : ScriptableObject
-
-{ /// <summary>
-/// class C# normale
-/// </summary>
-/// 
+{ /// class C# normale
     public string nameNPC;
     public Sprite spriteNPC;
     [TextArea(3, 10)]
     public string message;
-
     public string[] answers;
     public int selectedAnswerIndex = -1;
     public DialogueMessage[] next; //peut-être changer le nom
@@ -33,15 +28,10 @@ public class DialogueMessage : ScriptableObject
     {
         selectedAnswerIndex = index;
     }
-
-
-
     public virtual DialogueMessage GetNextMessage() // renvoie un type DebugLogMessage
     {
         return GetNextMessage(0);
-
     }
-
     public virtual DialogueMessage GetNextMessage(int answer = 0) //new remplace le précédent GNM pour le jet Dice
     {
         if (next != null && next.Length == 1)
@@ -52,13 +42,9 @@ public class DialogueMessage : ScriptableObject
         {
             return null;
         }
-
         //à retourner une instance de DialogueMessage
-
     }
 }
-
-
 
 [CreateAssetMenu]
 public class DiceRollDialogueMessage : DialogueMessage

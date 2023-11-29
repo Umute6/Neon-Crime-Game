@@ -13,16 +13,19 @@ MonoBehaviour:
   m_Name: CyanTwoMeetings
   m_EditorClassIdentifier: Assembly-CSharp::DiceRollDialogueMessage
   nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: Avec qui souhaites-tu discuter en premier?
   answers:
   - "L'ing\xE9nieure."
   - Les suspects.
   - Je vous laisse choisir.
-  selectedAnswerIndex: 0
+  selectedAnswerIndex: 1
   next:
   - {fileID: 11400000, guid: 817302e6dfc2c354eb6c1efba762715e, type: 2}
   - {fileID: 11400000, guid: 8addad82bc1ba064bb05b82c5158e963, type: 2}
   - {fileID: 11400000, guid: 0afc0bc719c9d2544ab858c51b375d33, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
   nextFailed:
   - {fileID: 11400000, guid: 817302e6dfc2c354eb6c1efba762715e, type: 2}
   - {fileID: 11400000, guid: 8addad82bc1ba064bb05b82c5158e963, type: 2}

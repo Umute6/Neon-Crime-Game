@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DiceMsg_Ans3
   m_EditorClassIdentifier: 
   nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: "Du fait de ma position, j'ai pu recueillir des avis divergents depuis
     le d\xE9but du projet. C'est donc avec un profond regret que mon sup\xE9rieur
     et moi avons identifi\xE9 les principaux suspects : trois employ\xE9s manifestant

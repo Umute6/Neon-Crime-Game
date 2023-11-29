@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - currentMessage: {fileID: 11400000, guid: c0ef508023f012242aede9cfca8f74cc, type: 2}
+  - currentMessage: {fileID: 11400000, guid: 67e26490e76924848923158e979707b1, type: 2}
   - dialogueManager: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
