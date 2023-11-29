@@ -1,0 +1,142 @@
+:: StoryTitle
+Neon Crime
+
+
+:: StoryData
+{
+  "ifid": "ECA0D66C-E934-4B8D-B30B-D45C34F1473A",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Voie réussite",
+  "tag-colors": {
+    "Test": "yellow",
+    "cyan": "blue"
+  },
+  "zoom": 1
+}
+
+
+:: \ Enquête {"position":"1325,1175","size":"100,100"}
+
+
+
+:: "La nouvelle source d'énergie sur laquelle on a travaillé a disparu !! Viens au plus vite, on a besoin de toi !! Descends dès que tu arrives, je t'y attendrai. Je pense qu'on a réussi à bloquer à l'intérieur le ou la coupable... C'est problament quelqu'un de l'équipe..." {"position":"800,450","size":"100,100"}
+
+
+
+:: Accueil par 1er NPC allié : Cyan {"position":"1325,575","size":"200,100"}
+Je te souhaite la bienvenue! Mon nom est Cyan, je suis le manager d'une petite équipe. Tu es ici dans notre lieu de travail, les sous terrains de métro. 
+
+(text-colour:magenta)[choix ]
+* [[Bonsoir M. Cyan. Le message que j'ai reçu mentionnait une urgence. Que s'est-il passé?]]
+
+* [[Oui, bonsoir. J'ai fait aussi vite que possible! Traversez la capitale le soir et il y a moins de transport... pour arriver au terminal des métros. ]]
+
+
+
+
+:: Ah, des metros nocturnes m'auraient bien aidé à arriver plus facilement! Pourquoi ne pas interroger vous-même vos propres employés? {"position":"1225,1000","size":"100,100"}
+
+
+
+:: Bonsoir M. Cyan. Le message que j'ai reçu mentionnait une urgence. Que s'est-il passé? {"position":"1275,700","size":"200,200"}
+(Réaction possitive Cyan)
+
+
+Oui, on nous a dérobé la source d'énergie pour les futurs métros nocturnes. Le //prisme chromatique//. C'était un projet qui est resté en interne. Dû à mon poste, j'ai pu entendre des avis très partagés depuis le début du projet...
+C'est pourquoi, avec beaucoup de regret, mon supérieur et moi-même avons déterminé les principaux suspectes : trois employés ayant exprimé des propos négatifs avec des attitudes douteuses.
+J'ai entendu que tu as les meilleures techniques pour enquêter. Je compte beaucoup sur ton efficacité !
+
+(text-colour:magenta)[choix + check dice]
+
+* [[Suspecter votre propre équipe !? C'est pourquoi vous faites appel à quelqu'un en externe, c'est bien ça ? | Enquête]] (text-colour:magenta)[check dice Enquête : facile (Enquête)]
+
+* [[Vous pouvez aussi compter sur d'autres de mes compétences...!]] (text-colour:magenta)[check dice Crush : moyen (Enquête)]
+
+* [[Ah, des metros nocturnes m'auraient bien aidé à arriver plus facilement! Pourquoi ne pas interroger vous-même vos propres employés?]] 
+
+
+:: Cyan pour l'ingénieure {"position":"675,975","size":"100,100"}
+L'ingénieure est encore présente dans les lieux. Elle dit que tout va bien et garde le sourir. Je ne peux pas parler pour elle mais sache que j'ai beaucoup d'attente sur votre enquête.
+
+
+:: Idées noms\  {"position":"1325,1300","size":"100,100"}
+Idées pour noms d'éléments:
+
+Ville : (hésite à nommer et juste spécifier que cela se passe dans une capitale...)
+Synchronova
+Neonoir
+
+
+Lieu d'évent du jeu :  
+Neon-Underground
+Neonoir
+
+
+Projet de métro nocturnes qui travarsent la ville :
+Prisma Lines
+
+
+La source d'énergie qui reseemble à un prisme:
+SpectraPulse
+Prismaflux
+
+
+L'équipe dans laquelle on retrouve les différents perso (aliés + suspects)
+CyberLume
+
+
+:: Mais avoir un avis opposé ne rend pas coupable obligatoirement. Quelque chose a du\  {"position":"1550,1125","size":"100,100"}
+(Cyan donne ses raisons)
+Mais je te laisse en juger par toi-même : 
+Je te donne accès aux dossiers des trois suspects. Tu y trouveras certaines informations pouvant te guider.
+
+
+
+
+
+
+:: Oui, bonsoir. J'ai fait aussi vite que possible! Traversez la capitale le soir et il y a moins de transport... pour arriver au terminal des métros.\  {"position":"1500,700","size":"100,100"}
+
+
+
+:: PNJ aliés/crush {"position":"800,325","size":"100,100"}
+Dans une ruelle illuminée, vous vous trouvez devant le Synthchronova Café, message à nouveau lu : 
+
+[["La nouvelle source d'énergie sur laquelle on a travaillé a disparu !! Viens au plus vite, on a besoin de toi !! Descends dès que tu arrives, je t'y attendrai. Je pense qu'on a réussi à bloquer à l'intérieur le ou la coupable... C'est problament quelqu'un de l'équipe..."]]
+
+
+
+Le <b>Prismapulse</b> a disparu.  
+
+
+
+
+
+
+:: Réaction neutre de Cyan {"position":"1775,425","size":"100,100"}
+
+
+
+:: Suspecter votre propre équipe !? C'est pourquoi vous faites appel à quelqu'un en externe, c'est bien ça ? {"position":"1550,1000","size":"100,100"}
+(Nouvelle réaction possitive de Cyan (text-style:"underline")[si dice réussi])
+
+Perpicace, je n'en attendais pas moi de toi!
+
+* [[Mais avoir un avis opposé ne rend pas coupable obligatoirement. Quelque chose a du ]] 
+
+
+:: Voie réussite {"position":"1325,450","size":"100,100"}
+[[Accueil par 1er NPC allié : Cyan]]
+
+
+:: Vous pouvez aussi compter sur d'autres de mes compétences...! {"position":"1350,975","size":"100,100"}
+
+
+
+:: avis Cyan sur suspects {"position":"1775,925","size":"100,100"}
+Avoir des certains employés partagé leurs inquiétudes et réticences est une chose. Mais cela en est une autre lorsque sur l'intérêt de laisser une telle énergie uniquement pour du transport. Les
+
+
+:: gg {"position":"1600,425","size":"100,100"}
+[[Réaction neutre de Cyan]]
