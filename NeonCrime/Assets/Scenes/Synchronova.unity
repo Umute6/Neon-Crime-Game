@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMessage: {fileID: 11400000, guid: c0ef508023f012242aede9cfca8f74cc, type: 2}
+  dialogueManager: {fileID: 0}
 --- !u!4 &1534843078
 Transform:
   m_ObjectHideFlags: 0
