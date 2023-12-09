@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisplayMessage : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class DisplayMessage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Button button = continueButton.GetComponent<Button>();
+        // button.onClick.AddListener(ContinueDialogue);
+
         if (dialogueManager == null)
         {
             // si le DialogueManager n'est pas attribué, recherche-le dans la scène
@@ -23,21 +27,28 @@ public class DisplayMessage : MonoBehaviour
             }
         }
 
-            // commence le dialogue avec le 1er msg
+        // commence le dialogue avec le 1er msg
         dialogueManager.StartDialogue(currentMessage);
-        }
-        
-
-        // Update is called once per frame
-        void Update()
-        {
-            //appuyez sur n'importe quelle touche pour afficher le next msg
-            if (Input.GetKeyDown("space"))
-            {
-                dialogueManager.DisplayNextMessage();
-
-            }
-
-            //if(answerIndex.OnClick)
-        }
     }
+
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        //appuyez sur n'importe quelle touche pour afficher le next msg
+        if (Input.GetMouseButtonDown(0))
+        {
+            dialogueManager.DisplayNextMessage();
+
+        }
+
+        //if(answerIndex.OnClick)
+    }
+    // void ContinueDialogue()
+    // {
+    //     Debug.Log("Clicked");
+    // }
+}
+

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 
 [CreateAssetMenu]
 public class DialogueMessage : ScriptableObject
 { /// class C# normale
+    public Sprite spriteBckGrd;
     public string nameNPC;
     public Sprite spriteNPC;
     [TextArea(3, 10)]

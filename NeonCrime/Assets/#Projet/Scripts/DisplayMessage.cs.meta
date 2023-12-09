@@ -4,6 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - backGround: {fileID: 21300000, guid: aeb4bf1982349694588801ad806b6f87, type: 3}
   - currentMessage: {fileID: 11400000, guid: 67e26490e76924848923158e979707b1, type: 2}
   - dialogueManager: {instanceID: 0}
   executionOrder: 0

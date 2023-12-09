@@ -16,14 +16,16 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameNPCText;
     private string previousNPCName;
     public Image profileNPCImage;
+    public Image backGroundImage;
     public GameObject dialogueBox; //tmtc, la box du dial mais peut-être changer l'encrage
 
     private Queue<DialogueMessage> dialogueQueue = new Queue<DialogueMessage>(); // FIFO, method for dialogues and lines
-    private DialogueMessage currentMessage; // reprend le type DialogueMessage et la list answers est connectée
-                                            // private DialogueMessage currentNPC;
-                                            // public onClickButtonAnswer buttonAnswerHandler; //ajoute une réf au gestionnaire de boutons
+    private DialogueMessage currentMessage; 
+    // reprend le type DialogueMessage et la list answers est connectée
+    // private DialogueMessage currentNPC;
+    // public onClickButtonAnswer buttonAnswerHandler; //ajoute une réf au gestionnaire de boutons
 
-    private ProfilePlayer profilePlayer;
+    // private ProfilePlayer profilePlayer;
     //method pour afficher nouveau msg
     public void StartDialogue(DialogueMessage message)
     {
@@ -91,6 +93,7 @@ public class DialogueManager : MonoBehaviour
         if (currentMessage.spriteNPC != null)
         {
             profileNPCImage.sprite = currentMessage.spriteNPC;
+            backGroundImage.sprite = currentMessage.spriteBckGrd;
             color.a = 1f;
         }
         else
@@ -104,6 +107,8 @@ public class DialogueManager : MonoBehaviour
         profileNPCImage.color = color;
 
         previousNPCName = currentMessage.nameNPC;
+
+
 
     }
 

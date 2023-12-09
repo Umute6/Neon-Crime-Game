@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 3MsgRoll
   m_EditorClassIdentifier: Assembly-CSharp::DiceRollDialogueMessage
+  spriteBckGrd: {fileID: 21300000, guid: 84a156bc3570c004c802c0dbeb06d294, type: 3}
   nameNPC: Cyan
   spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
   message: "Nous avons besoin de tes capacit\xE9s pour r\xE9soudre cette affaire.
