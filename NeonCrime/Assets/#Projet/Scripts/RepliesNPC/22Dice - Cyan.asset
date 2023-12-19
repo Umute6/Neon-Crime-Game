@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 22Dice - Cyan
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: aeb02ad3bd0a3554eb7461b34089183f, type: 3}
+  nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Hum, on pourrait aller voir la s\xE9curit\xE9 pour voir comment cela
+    avance ou bien ne plus faire attendre notre coll\xE8gue qui est suspect\xE9e...
+    Qu\u2019en penses-tu ? "
+  answers:
+  - "La s\xE9curit\xE9 !! "
+  - "Hum, trop simple si la commerciale fut film\xE9e... Je veux entendre ce qu\u2019elle
+    a \xE0 dire. "
+  - "Un choix entre deux entretiens : je vais lancer une pi\xE8ce ! "
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: d84b37b20ab86d44c869016939d21fa5, type: 2}
+  - {fileID: 11400000, guid: 3a806bd941407a84698d744b4015dec4, type: 2}
+  - {fileID: 11400000, guid: f3ebbf0dcfbf2cd428fe4e1c5ac2f9ca, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: b9cd591aaf2f97f46ba8b9a29d8e9956, type: 2}
+  - {fileID: 11400000, guid: 3a806bd941407a84698d744b4015dec4, type: 2}
+  - {fileID: 11400000, guid: f3ebbf0dcfbf2cd428fe4e1c5ac2f9ca, type: 2}
+  difficulty: 0

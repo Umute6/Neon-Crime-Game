@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 30Player NF 1
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 6a3495c6efe5ce04bb9074f7c9fc7190, type: 3}
+  nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Tr\xE8s bien, allons-y !"
+  answers: []
+  selectedAnswerIndex: -1
+  next: []

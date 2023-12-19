@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CyanDialog.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0fa1bddf3f63ad94f9624326394e7bfb
+  - enabled: 1
+    path: Assets/Scenes/UndergroundLightsGate.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ThankYouFroPlaying.unity
+    guid: 9d3180d3a49a0154686c803140ec7508
   m_configObjects: {}

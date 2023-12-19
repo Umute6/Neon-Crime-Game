@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 17PDice - Jaune
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: aeb02ad3bd0a3554eb7461b34089183f, type: 3}
+  nameNPC: Jaune
+  spriteNPC: {fileID: 21300000, guid: a0115cb3998893c4882cd66fe045a185, type: 3}
+  message: "Oh merveilleux, tu as pu vraiment venir !! Cela fait tellement longtemps,
+    tu ne dois s\xFBrement plus te rappeler de moi.  "
+  answers:
+  - "Salut Jaune, bien s\xFBr que je me rappelle de toi ! "
+  - "Hum, je t\u2019avoue que j\u2019ai une mauvaise m\xE9moire des visages... "
+  - "Ne me dit pas que l\u2019enfant qui pr\xE9f\xE9rait jouer sur les racines d\u2019arbres
+    est devenue ing\xE9nieure !? Et en cheffe d\u2019un projet r\xE9volutionnaire
+    en plus ! "
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 3e47d2c26b3b9814c8abec5a84912944, type: 2}
+  - {fileID: 11400000, guid: ad68759650a60ea46b96372004ef3e05, type: 2}
+  - {fileID: 11400000, guid: 262069422b6de0443b95628813b210a6, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: c443831a3917ff74aab2e0fe62a6e5fc, type: 2}
+  - {fileID: 11400000, guid: dec4da8bed5e7244aa01b7e8e0d76327, type: 2}
+  - {fileID: 11400000, guid: 5425c17876536b44e93a76d8195eae3a, type: 2}
+  difficulty: 0

@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueBox; //tmtc, la box du dial mais peut-être changer l'encrage
 
     private Queue<DialogueMessage> dialogueQueue = new Queue<DialogueMessage>(); // FIFO, method for dialogues and lines
-    private DialogueMessage currentMessage; 
+    private DialogueMessage currentMessage;
     // reprend le type DialogueMessage et la list answers est connectée
     // private DialogueMessage currentNPC;
     // public onClickButtonAnswer buttonAnswerHandler; //ajoute une réf au gestionnaire de boutons
@@ -153,6 +153,20 @@ public class DialogueManager : MonoBehaviour
             StartDialogue(nextMessage);
         }
     }
+    public bool IsCurrentMessageSkippable()
+    {
 
+        if (currentMessage != null)
+        {
+            if (currentMessage.answers != null && currentMessage.answers.Length > 1)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
 
 }

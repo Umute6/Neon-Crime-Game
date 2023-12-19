@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 13Msg - Magenta
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 15d6cbcd61ddb8f4da64720cd9558a25, type: 3}
+  nameNPC: Magenta
+  spriteNPC: {fileID: 21300000, guid: 99e236cd8f0b32e47b850a1398ca7307, type: 3}
+  message: "(Il l\xE8ve son poignet gauche pour y lire un message sur sa montre.)
+    Me voil\xE0 bien impoli mais des responsabilit\xE9s m'appellent. L'\xE9quipe
+    a \xE9t\xE9 brief\xE9e sur la pr\xE9sence et l'assistance de Cyan lors de vos
+    entretiens. "
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: a5b2a6961500c7d4580456c43eca16b9, type: 2}

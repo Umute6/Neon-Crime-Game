@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 21Msg - Jaune
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: aeb02ad3bd0a3554eb7461b34089183f, type: 3}
+  nameNPC: Jaune
+  spriteNPC: {fileID: 21300000, guid: a0115cb3998893c4882cd66fe045a185, type: 3}
+  message: "Je t\u2019avais parl\xE9 que je trouvais bizarre que la porte ultra s\xE9curis\xE9e
+    n\u2019a aucun signe d\u2019infraction ! Et les vid\xE9os surveillances de ce
+    soir ne sont toujours pas sorties..."
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 2c6b96318430a024cabce2ab72b81867, type: 2}

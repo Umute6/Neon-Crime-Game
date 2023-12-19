@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 6Msg - Noire
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: aeb4bf1982349694588801ad806b6f87, type: 3}
+  nameNPC: Noire
+  spriteNPC: {fileID: 0}
+  message: "\"Quelqu'un de l'\xE9quipe t'attend \xE0 l'entr\xE9e. On se verra plus
+    tard, on est tous cloisonn\xE9s tant qu'on n'a pas le coupable. Je dois m'assurer
+    que personne ne meurt de faim d'ici-l\xE0...\""
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 46613d7bbc8183745842168ddabac639, type: 2}

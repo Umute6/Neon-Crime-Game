@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 30Dice - Cyan
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 11006b1e15747874784f13a39ccec630, type: 3}
+  nameNPC: ' '
+  spriteNPC: {fileID: 0}
+  message: "Vous comprenez que cela ne vous sert \xE0 rien d'insister aupr\xE8s de
+    Rouge. Vous faites savoir \xE0 Cyan qui vous souhaitez aller voir. "
+  answers:
+  - 'Vous laissez Cyan choisir qui aller voir. '
+  - "Vous voulez aller voir l\u2019agent de s\xE9curit\xE9. "
+  - "Vous voulez aller voir l\u2019ing\xE9nieure. "
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: a5ac53e1d3c476c42891892229befaef, type: 2}
+  - {fileID: 11400000, guid: 452a29215cbcfd541aec5ef5c9c89907, type: 2}
+  - {fileID: 11400000, guid: daec54e48772d174a8316de84c2f6b90, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: 37df79ef46e34c046b9ad4a84ca7b134, type: 2}
+  - {fileID: 11400000, guid: aa798405fd7124a49b6c689e58f56754, type: 2}
+  - {fileID: 11400000, guid: a45b7ba2d66c0844995d3e128fce757b, type: 2}
+  difficulty: 0

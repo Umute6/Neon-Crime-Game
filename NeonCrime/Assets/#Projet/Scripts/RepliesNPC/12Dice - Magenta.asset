@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 12Dice - Magenta
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 15d6cbcd61ddb8f4da64720cd9558a25, type: 3}
+  nameNPC: Magenta
+  spriteNPC: {fileID: 21300000, guid: 99e236cd8f0b32e47b850a1398ca7307, type: 3}
+  message: "Mais peut-\xEAtre avez-vous d\xE9j\xE0 des questions ?"
+  answers:
+  - "Oui, comment \xE7a se fait qu'on voit l'ext\xE9rieur dans votre bureau ? On
+    est en sous-terrain, non ?"
+  - La commerciale est l'unique suspect mais avait-t-elle des motivations ?
+  - Non. J'aimerai commencer au plus vite.
+  selectedAnswerIndex: 0
+  next:
+  - {fileID: 11400000, guid: fd93d2befeb8d624098f0c328e3c2cb0, type: 2}
+  - {fileID: 11400000, guid: bd98adac7640efe40957d844d390ba66, type: 2}
+  - {fileID: 11400000, guid: ead52f2d934114545acc2d06d6070b47, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: 3a02cfcf6398e8f4d90dafbdc624d11b, type: 2}
+  - {fileID: 11400000, guid: 8a949cc7816e7e2458cd5638bd97da18, type: 2}
+  - {fileID: 11400000, guid: afda94e805a427a4cafe60413864903b, type: 2}
+  difficulty: 0

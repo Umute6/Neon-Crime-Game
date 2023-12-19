@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 25Msg - Rouge
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 6a3495c6efe5ce04bb9074f7c9fc7190, type: 3}
+  nameNPC: Rouge
+  spriteNPC: {fileID: 21300000, guid: 397c53ec47dc6254f977dab6aae49c18, type: 3}
+  message: "La seule chose dont je serai coupable c\u2019est d\u2019avoir infiltr\xE9
+    <i>Retroflux</i>\u2026 Vous avez d\xFB entendre que je \u201Cr\xF4dais\u201D
+    autour du <i>Lume</i>. Je m\u2019assurais juste qu\u2019il soit bien op\xE9rationnel.
+    C\u2019\xE9tait dans mon int\xE9r\xEAt que cela fonctionne. Je souhaitais juste
+    que le client ne r\xE9cup\xE8re pas cette source de lumi\xE8re r\xE9volutionnaire...
+    et non le d\xE9truire !!"
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 44bc6d915663c1a4b959532397b2d40d, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 28Msg - Cyan
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 6a3495c6efe5ce04bb9074f7c9fc7190, type: 3}
+  nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Seul M. Magenta doute encore de la culpabilit\xE9 de Rouge. Il a tout
+    de m\xEAme accept\xE9 qu\u2019on l\u2019aide par rapport \xE0 <i>Retroflux</i>.
+    Mais je ne savais pas qu\u2019elle projetait de leur voler ce qu\u2019ils nous
+    ont command\xE9... Dans quel but ? "
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 8c5fcf77b5af3d842b1e2890f1ec8648, type: 2}

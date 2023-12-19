@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 18Msg - Narra
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: aeb02ad3bd0a3554eb7461b34089183f, type: 3}
+  nameNPC: ' '
+  spriteNPC: {fileID: 21300000, guid: a0115cb3998893c4882cd66fe045a185, type: 3}
+  message: 'Jaune se redresse et vous regarde dans les yeux. '
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: b5544d4f1773ced40898eed33695a559, type: 2}

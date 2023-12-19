@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 24Dice - Rouge
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 6a3495c6efe5ce04bb9074f7c9fc7190, type: 3}
+  nameNPC: Rouge
+  spriteNPC: {fileID: 21300000, guid: 397c53ec47dc6254f977dab6aae49c18, type: 3}
+  message: "Bonjour ! Ou bonsoir... enfin qu\u2019importe. Je suis la tant recherch\xE9e
+    Rouge et non, je n\u2019ai pas d\xE9truit le travail de mes coll\xE8gues. Mais
+    votre parole vaudra plus que la mienne, c\u2019est bien \xE7a ? "
+  answers:
+  - 'Heu... '
+  - "Je ferai en sorte que la v\xE9rit\xE9 soit r\xE9v\xE9l\xE9e ! "
+  - "Non, enfin ma pr\xE9sence est l\xE0 surtout pour ne pas faire appel \xE0 un
+    service qui va rendre l\u2019affaire publique. "
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: a865919920b25354caae9f14a5dd90ad, type: 2}
+  - {fileID: 11400000, guid: 9c091ff8265c8894689eeb9d35bbcb02, type: 2}
+  - {fileID: 11400000, guid: 9d465dcf8644b41479663053b844bdd4, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: 9440369a361009d4881067bf4fa8b980, type: 2}
+  - {fileID: 11400000, guid: 6ef4b998d9457bd41898f08490ddeb2f, type: 2}
+  - {fileID: 11400000, guid: 9d465dcf8644b41479663053b844bdd4, type: 2}
+  difficulty: 0

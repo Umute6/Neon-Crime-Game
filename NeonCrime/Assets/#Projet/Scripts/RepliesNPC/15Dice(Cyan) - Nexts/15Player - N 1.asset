@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d676e817d0ae9214e9181ebcc757a7cc, type: 3}
+  m_Name: 15Player - N 1
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 15d6cbcd61ddb8f4da64720cd9558a25, type: 3}
+  nameNPC: ' '
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Cyan se redresse en \xE9tirant d'avantage ses l\xE8vres en un sourire
+    lui donnant l'air satisfait. M. Magenta en profite pour vous laisser continuer
+    avec Cyan."
+  answers: []
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 068b37bd552ce0b41a15de60eb96e6a5, type: 2}

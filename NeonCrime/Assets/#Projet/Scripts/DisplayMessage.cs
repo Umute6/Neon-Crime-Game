@@ -38,7 +38,7 @@ public class DisplayMessage : MonoBehaviour
     void Update()
     {
         //appuyez sur n'importe quelle touche pour afficher le next msg
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && dialogueManager.IsCurrentMessageSkippable())
         {
             dialogueManager.DisplayNextMessage();
 

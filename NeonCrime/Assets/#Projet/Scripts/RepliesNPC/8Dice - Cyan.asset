@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 8Dice - Cyan
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 3b2ca1461e47d0640aa9f71adeb0333a, type: 3}
+  nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Bonsoir. Es-tu la personne envoy\xE9e par Noire? (Vous acquiescez.) Je
+    pr\xE9sume que tu as re\xE7u les informations sur la situation. Mon nom est Cyan,
+    je suis le manager de l'\xE9quipe. Noire nous a convaincus que tu \xE9tais la
+    bonne personne pour r\xE9soudre cette affaire d\xE9licate."
+  answers:
+  - "J'esp\xE8re \xEAtre \xE0 la hauteur..."
+  - C'est mon amie, elle a donc un bon jugement !
+  - "Arriver et sauver les gens, \xE7a me connait, va !"
+  selectedAnswerIndex: 2
+  next:
+  - {fileID: 11400000, guid: b75a40cb59cbde841a30357a5494e672, type: 2}
+  - {fileID: 11400000, guid: 38cc1d6f13605b84e9d865ebfc69cb2b, type: 2}
+  - {fileID: 11400000, guid: 6089686f6a790d147879174ed5440f1f, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: ce2512a1b1fbc7b459beaa961e186388, type: 2}
+  - {fileID: 11400000, guid: dbd3cfb0508002740a41c2d3b94c2b45, type: 2}
+  - {fileID: 11400000, guid: 0d35df5db561d374897fa2ee0ce03e06, type: 2}
+  difficulty: 5

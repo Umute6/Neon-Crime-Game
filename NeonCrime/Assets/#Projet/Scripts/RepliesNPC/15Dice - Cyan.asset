@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d67a73f468842b8ee2d064c7dd77, type: 3}
+  m_Name: 15Dice - Cyan
+  m_EditorClassIdentifier: 
+  spriteBckGrd: {fileID: 21300000, guid: 15d6cbcd61ddb8f4da64720cd9558a25, type: 3}
+  nameNPC: Cyan
+  spriteNPC: {fileID: 21300000, guid: 7b046278e2b54fa42a24665d98f33a7d, type: 3}
+  message: "Si tu le veux bien, travaillons donc ensemble ! (Il tourne son sourire
+    vers vous en r\xE9ajustant ses lunettes sur son nez.)"
+  answers:
+  - "Tr\xE8s bien mais si je d\xE9couvre que c'\xE9tait toi le coupable depuis le
+    d\xE9but et qui a souffl\xE9 l'id\xE9e de ma pr\xE9sence pour me pi\xE8ger..."
+  - Et donc passer plus de temps avec toi ? Avec plaisir ! (Vous lui souriez en retour.)
+  - "Oui et je m'en remets \xE0 toi pour y voir plus clair. Merci de ton aide ! (Vous
+    hochez de la t\xEAte en le regardant droit dans les yeux.)"
+  selectedAnswerIndex: -1
+  next:
+  - {fileID: 11400000, guid: 20a448eea187ba0428f89184f3fbd111, type: 2}
+  - {fileID: 11400000, guid: b86333abf3ecd3043bf9f2f5674cbf1e, type: 2}
+  - {fileID: 11400000, guid: 322e3a730b7ce1c48a02e85d9c880691, type: 2}
+  selectedClass: {fileID: 0}
+  profile: {fileID: 0}
+  nextFailed:
+  - {fileID: 11400000, guid: 8b37b8d1f43c110439fad5eae908a298, type: 2}
+  - {fileID: 11400000, guid: 837b2a0bb64c4bd4ab6b0f520b269b98, type: 2}
+  - {fileID: 11400000, guid: 629d56bdc8dc80046a92604153343611, type: 2}
+  difficulty: 0
